@@ -45,14 +45,36 @@
 }
 
 .followButton.isFollowing{
-    border: 1px solid red ;
+    border: 1px solid #bbb;
+    background-color: transparent;
+    color: #fff;
+
 }
 
 .followButton:hover{
-    background-color: #ddd;
+    opacity: .8;
     
 }
 
 .followButton.isFollowing:hover{
-    background-color: red;
+    background-color: #e7b2b2;
+    color: red;
+    border: 1px solid red;
+}
+
+.followButton.isFollowing:hover .stopFollow{
+    display: block;
+}
+
+.followButton.isFollowing:hover .followText{
+    display: none;
+}
+
+
+.stopFollow{
+    display: none;
+}
+
+.followText{
+    display: block;
 }

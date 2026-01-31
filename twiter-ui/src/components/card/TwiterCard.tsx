@@ -27,7 +27,8 @@ const TwiterCard = (props: TwiterCardProps) => {
             <aside>
                 <button className={isFollowing ? `${styles.followButton} ${styles.isFollowing}` : styles.followButton}
                     onClick={handleFollow}>
-                    {isFollowing ? "Siguiendo" : "Seguir"}
+                    <span className={styles.followText}>{isFollowing ? "Siguiendo" : "Seguir"}</span>
+                    <span className={styles.stopFollow}>Dejar de seguir</span>
                 </button>
             </aside>
         </article>
