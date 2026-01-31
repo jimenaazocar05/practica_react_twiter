@@ -11,10 +11,18 @@ function App() {
         isFollowing={false}
       />
 
+      <TwiterCard 
+        name="Jane Smith" 
+        username="janesmith"
+        isFollowing={true}
+      >
+        children test
+      </TwiterCard>
+
       <TwiterCard
         name="Jimena Azocar" 
         username="jimenaazocar_"
-        isFollowing
+        isFollowing={false}
       />
     </div>
   )

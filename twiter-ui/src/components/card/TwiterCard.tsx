@@ -1,6 +1,7 @@
 import styles from './TwiterCard.module.css';
 
 interface TwiterCardProps {
+    children?: React.ReactNode;
     name: string;
     username: string;
     isFollowing: boolean;
