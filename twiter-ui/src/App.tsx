@@ -14,7 +14,7 @@ function App() {
       <TwiterCard
         name="Jimena Azocar" 
         username="jimenaazocar_"
-        isFollowing={true}
+        isFollowing
       />
     </div>
   )
