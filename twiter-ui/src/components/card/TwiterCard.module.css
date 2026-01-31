@@ -39,4 +39,20 @@
     font-weight: bold;
     background-color: #fff;
     color: #000;
+    cursor: pointer;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+}
+
+.followButton.isFollowing{
+    border: 1px solid red ;
+}
+
+.followButton:hover{
+    background-color: #ddd;
+    
+}
+
+.followButton.isFollowing:hover{
+    background-color: red;
 }

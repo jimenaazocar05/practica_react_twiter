@@ -1,13 +1,19 @@
 import styles from './TwiterCard.module.css';
+import { useState } from 'react';
 
 interface TwiterCardProps {
     children?: React.ReactNode;
     name: string;
     username: string;
-    isFollowing: boolean;
 }
 
 const TwiterCard = (props: TwiterCardProps) => {
+    const [isFollowing, setIsFollowing] = useState(false);
+
+    const handleFollow = () => {
+        setIsFollowing(!isFollowing);
+    }
+
     return (
         <article className={styles.card}>
             <header className={styles.cardHeader}>
@@ -19,8 +25,9 @@ const TwiterCard = (props: TwiterCardProps) => {
             </header>
 
             <aside>
-                <button className={styles.followButton}>
-                    {props.isFollowing ? "Siguiendo" : "Seguir"}
+                <button className={isFollowing ? `${styles.followButton} ${styles.isFollowing}` : styles.followButton}
+                    onClick={handleFollow}>
+                    {isFollowing ? "Siguiendo" : "Seguir"}
                 </button>
             </aside>
         </article>

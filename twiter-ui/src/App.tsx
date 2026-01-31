@@ -8,13 +8,11 @@ function App() {
       <TwiterCard
         name="John Doe" 
         username="johndoe"
-        isFollowing={false}
       />
 
       <TwiterCard 
         name="Jane Smith" 
         username="janesmith"
-        isFollowing={true}
       >
         children test
       </TwiterCard>
@@ -22,7 +20,6 @@ function App() {
       <TwiterCard
         name="Jimena Azocar" 
         username="jimenaazocar_"
-        isFollowing={false}
       />
     </div>
   )
